@@ -231,6 +231,7 @@
             break;
           case 'center-right':
             x += options.lineWidth * (4 / 5) - options.textWidth / 2 + fudgeFactor;
+            break;
           case 'justify':
             words = text.trim().split(/\s+/);
             textWidth = this.widthOfString(text.replace(/\s+/g, ''), options);
