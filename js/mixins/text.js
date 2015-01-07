@@ -216,6 +216,7 @@
       align = options.align || 'left';
       wordSpacing = options.wordSpacing || 0;
       characterSpacing = options.characterSpacing || 0;
+      var fudgeFactor = 10;
       if (options.width) {
         switch (align) {
           case 'right':
@@ -223,8 +224,13 @@
             x += options.lineWidth - textWidth;
             break;
           case 'center':
-            x += options.lineWidth / 2 - options.textWidth / 2;
+            x += options.lineWidth * (2 / 4) - options.textWidth / 2;
             break;
+          case 'center-left':
+            x += options.lineWidth * (1 / 5) - options.textWidth / 2 - fudgeFactor;
+            break;
+          case 'center-right':
+            x += options.lineWidth * (4 / 5) - options.textWidth / 2 + fudgeFactor;
           case 'justify':
             words = text.trim().split(/\s+/);
             textWidth = this.widthOfString(text.replace(/\s+/g, ''), options);
