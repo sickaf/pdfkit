@@ -168,6 +168,7 @@ module.exports =
     align = options.align or 'left'
     wordSpacing = options.wordSpacing or 0
     characterSpacing = options.characterSpacing or 0
+    fudgeFactor = 10
 
     # text alignments
     if options.width
@@ -177,7 +178,13 @@ module.exports =
           x += options.lineWidth - textWidth
 
         when 'center'
-          x += options.lineWidth / 2 - options.textWidth / 2
+          x += options.lineWidth * (2 / 4) - options.textWidth / 2
+
+        when 'center-left':
+            x += options.lineWidth * (1 / 5) - options.textWidth / 2 - fudgeFactor
+
+        when 'center-right':
+            x += options.lineWidth * (4 / 5) - options.textWidth / 2 + fudgeFactor
 
         when 'justify'
           # calculate the word spacing value
