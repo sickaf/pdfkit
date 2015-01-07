@@ -20,7 +20,9 @@
     "type": "git",
     "url": "https://github.com/devongovett/pdfkit.git"
   },
-  "bugs": "http://github.com/devongovett/pdfkit/issues",
+  "bugs": {
+    "url": "http://github.com/devongovett/pdfkit/issues"
+  },
   "devDependencies": {
     "coffee-script": ">=1.0.1",
     "codemirror": "~3.20.0",
@@ -49,5 +51,26 @@
   },
   "engine": [
     "node >= v0.10.0"
-  ]
+  ],
+  "gitHead": "82ca945004785c6d8e87d438d7a606eea626bc1c",
+  "_id": "pdfkit@0.7.0",
+  "_shasum": "3dbf9b4ad12d99c5db66c7a9bb311b0e75ca0a77",
+  "_from": "pdfkit@",
+  "_npmVersion": "1.4.15",
+  "_npmUser": {
+    "name": "devongovett",
+    "email": "devongovett@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "devongovett",
+      "email": "devongovett@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "3dbf9b4ad12d99c5db66c7a9bb311b0e75ca0a77",
+    "tarball": "http://registry.npmjs.org/pdfkit/-/pdfkit-0.7.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.0.tgz"
 }
